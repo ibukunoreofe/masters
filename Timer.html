@@ -1,0 +1,23 @@
+<html>
+	<head>
+		<title>System Time</title>
+		
+	</head>
+	<body>
+		The time is <p id="displayTime">00:00:00</p>
+
+
+
+		<script type="text/javascript">
+
+			var myVar=setInterval(function () {myTimer()}, 1000);
+
+			function myTimer() {
+			    var d = new Date();
+				    document.getElementById("displayTime").innerHTML = d.toLocaleTimeString();
+				}
+
+		</script>
+	</body>
+
+</html>
